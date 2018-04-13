@@ -1,0 +1,14 @@
+#!/bin/bash
+#set -eu
+
+this_output=$(cat pubs|xargs -n1 -I%  .ci/testpub.sh %  2>&1 )
+this_filter=$(echo $this_output | grep 'is not a public key')
+if [ ! -z "$this_filter" ]; then
+  echo 'error'
+  echo $this_filter
+  exit 1
+else
+  echo 'good'
+  echo $this_filter
+  exit 0
+fi
