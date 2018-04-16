@@ -1,6 +1,6 @@
 #!/usr/bin/env bats
 
-@test "test pubs1" {
-  run bash .ci/runtest
+@test ".ci/test_all_pubs" {
+  run bash .ci/test_all_pubs
   [ "$status" -eq 0 ]
 }
