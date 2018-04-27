@@ -1,0 +1,8 @@
+#!/bin/bash
+rm transmute_team_ssh_pubs
+for i in ./ssh/*.pub; do
+    [ -f "$i" ] || break
+    echo '# ' $i >> transmute_team_ssh_pubs;
+    cat $i >> transmute_team_ssh_pubs;
+    echo '\n' >> transmute_team_ssh_pubs
+done

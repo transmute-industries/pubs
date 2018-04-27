@@ -1,0 +1,6 @@
+#!/bin/bash
+# Import Transmute GPG public keys
+for i in ./gpg/*.key; do
+    [ -f "$i" ] || break
+    gpg --import $i
+done
