@@ -1,7 +1,7 @@
 #!/bin/bash
 #set -eu
 
-cat pubs \
+cat transmute_team_ssh_pubs \
   | grep -P -v '^\s*$' \
   | grep -P -v '^\s*#' \
   | xargs -n1 -I%  .ci/testpub.sh %

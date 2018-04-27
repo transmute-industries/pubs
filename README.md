@@ -1,6 +1,7 @@
-# Transmute.industries pubs
+# Transmute Team 
 
-oneliner to authorize Transmute team  to a server
+Oneliner to authorize Transmute team to a server
+
 ```
 curl -Ls git.io/tstaddus|bash
 ```
