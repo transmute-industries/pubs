@@ -3,7 +3,7 @@
 Oneliner to authorize Transmute team to a server
 
 ```
-curl -Ls git.io/tstaddus|bash
+curl -Ls git.io/transmute_add_team_ssh_keys | bash
 ```
 
 ### GPG signing and github
